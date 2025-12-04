@@ -32,13 +32,16 @@
     <header class="fixed top-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-20 border-b border-pink-100 touch-manipulation">
         <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-gradient-to-br from-pink-400 to-orange-400 rounded-xl flex items-center justify-center text-white font-bold shadow-md transform -rotate-6">
+                <div class="w-8 h-8 bg-gradient-to-br from-pink-400 to-orange-400 rounded-xl flex items-center justify-center text-white font-bold shadow-md transform -rotate-6 flex-shrink-0">
                     <!-- Smile Icon SVG -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
                 </div>
-                <span class="font-bold text-xl tracking-tight text-slate-700">BunnyMind</span>
+                <div class="flex flex-col md:flex-row md:items-baseline">
+                    <span class="font-bold text-xl tracking-tight text-slate-700 leading-none">BunnyMind</span>
+                    <span class="text-[10px] text-slate-400 md:ml-2 transform scale-90 md:scale-100 origin-left mt-0.5 md:mt-0 whitespace-nowrap">小红书-心灵栖息书原创</span>
+                </div>
             </div>
-            <div class="text-xs font-bold text-pink-400 bg-pink-50 px-3 py-1 rounded-full">20题深度版</div>
+            <div class="text-xs font-bold text-pink-400 bg-pink-50 px-3 py-1 rounded-full whitespace-nowrap ml-2">20题深度版</div>
         </div>
     </header>
 
@@ -295,7 +298,6 @@
                             <div class="text-xs md:text-sm text-slate-400">
                                 <p>BunnyMind © 2015</p>
                                 <p>色彩心理学实验室</p>
-                                <p class="mt-1 text-slate-500 text-[10px]">小红书-心灵栖息书原创 侵权必究</p>
                             </div>
                             <button onclick="startGame()" class="flex items-center gap-2 px-6 py-3 bg-pink-500 rounded-xl font-bold hover:bg-pink-400 transition-all shadow-lg hover:shadow-pink-500/30 touch-manipulation">
                                 <!-- Refresh Icon -->
